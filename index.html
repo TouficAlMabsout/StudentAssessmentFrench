@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Évaluation des étudiants</title>
+
+    
+</head>
+
+<body>
+    <div class="teacher-setting-box">
+        <span class="teacher-setting-label">Enseignant:</span>
+        <input type="text" class="teacher-setting-input">
+    </div>
+    
+    <div class="class-setting-box">
+        <span class="date-setting-label">Classe:</span>
+        <input type="text" class="info-input" id="Class">
+    </div>
+
+    <div class="subject-setting-box">
+        <span class="info-label">Matière:</span>
+        <input type="text" class="info-input" id="Subject">
+    </div>
+
+    <div class="info-box">
+        <span class="info-label">Examen:</span>
+        <input type="text" class="info-input" id = "testName" >
+    </div>
+    
+    <div class="info-box">
+        <span class="info-label">Nombre d'étudiants:</span>
+        <input type="number" class="info-input" id="totalStudents" >
+    </div>
+    
+    <div class="date-setting-box">
+        <span class="date-setting-label">Date:</span>
+        <input type="date" class="date-setting-input">
+    </div>
+
+    
+    
+    
+    <form id="testForm">
+        <table id="questionsTable">
+            <thead>
+                <tr>
+                    <th>Objectif</th>
+                    <th>Nombre d'étudiants ayant atteint l'objectif</th>
+                    <th>Pourcentage correspondant</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button type="button" id="addObjective">Ajouter un objective</button>
+        <input type="submit" value="Soumettre" id="submission">
+
+    </form>
+    <!-- Add these divs to your HTML structure -->
+    <div id="highestPercentageBox" class="percentage-box">
+        <h3>Objectif(s) ayant été le plus atteint(s)</h3>
+        <div id="highestPercentageValue"></div>
+    </div>
+
+    <div id="lowestPercentageBox" class="percentage-box">
+        <h3>Objectif(s) ayant été le moins atteint(s)</h3>
+        <div id="lowestPercentageValue"></div>
+    </div>
+    <div id="generatePdfButton">Générer un PDF</div>
+
+    <script>
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

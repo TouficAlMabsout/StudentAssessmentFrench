@@ -1,0 +1,273 @@
+#testForm {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#questionsTable {
+    width: calc(100%);
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#questionsTable th,
+#questionsTable td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 12px;
+}
+
+#questionsTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#questionsTable .objectiveColumn {
+    width: 95%;
+}
+
+#questionsTable .smallColumn {
+    width: 5%;
+}
+
+#questionsTable input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#questionsTable button,
+#addObjective,
+#submission {
+    display: block;
+    margin-top: 10px;
+    width: calc(20%-20px); /* Adjusted width */
+    box-sizing: border-box;
+    padding: 12px;
+    cursor: pointer;
+    font-family: 'Helvetica', sans-serif;
+}
+
+#addObjective,
+#submission {
+    margin-right: 20px; /* Add margin between the buttons */
+}
+
+#questionsTable button,
+#addObjective {
+    background-color: #45a049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#questionsTable button:hover,
+#addObjective:hover {
+    background-color: #3b8040;
+}
+
+#submission {
+    background-color: #f44336;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Helvetica', sans-serif;
+}
+
+#submission:hover {
+    background-color: #d32f2f;
+}
+#addQuestion {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: calc(20% - 20px);
+    box-sizing: border-box;
+    padding: 12px;
+    cursor: pointer;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#addQuestion:hover {
+    background-color: #0b7dda;
+}
+.info-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 10px; /* Added margin-right for spacing between the boxes */
+}
+
+.info-label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.info-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+}
+.date-setting-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width:120px;
+}
+
+.date-setting-label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.date-setting-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+}
+.percentage-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#highestPercentageBox,
+#lowestPercentageBox {
+    width: 45%; /* Adjusted width for the percentage boxes */
+    box-sizing: border-box;
+    margin-right: 20px; /* Adjusted margin-right for spacing between boxes */
+}
+
+#highestPercentageValue,
+#lowestPercentageValue {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+}
+#generatePdfButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Helvetica', sans-serif;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    width:10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#generatePdfButton:hover {
+    background-color: #45a049;
+}
+
+.subject-setting-box,
+.class-setting-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-right: 10px; /* Added margin-right for spacing between the boxes */
+}
+
+.subject-setting-box .info-label,
+.class-setting-box .info-label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.subject-setting-box .info-input,
+.class-setting-box .info-input {
+    width: 150px;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+}
+
+.teacher-setting-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-right: 10px; /* Added margin-right for spacing between the boxes */
+}
+
+.teacher-setting-label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.teacher-setting-input {
+    width: 150px;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+}
+
+
+
