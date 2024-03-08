@@ -73,7 +73,7 @@ document.getElementById('testForm').addEventListener('submit', function (event) 
     var totalStudentsInput = document.getElementById('totalStudents');
     var totalStudents = parseInt(totalStudentsInput.value);
     if (isNaN(totalStudents) || totalStudents <= 0) {
-        alert("Veuillez saisir un entier positif valide pour le nombre total d'étudiants.");
+        alert("Veuillez saisir un entier positif valide pour le nombre total d'élèves.");
         totalStudentsInput.value = ''; // Clear the input
         return;
     }
@@ -107,7 +107,7 @@ document.getElementById('testForm').addEventListener('submit', function (event) 
         // Validate Students that Acquired the Objective
         var studentValue = parseInt(studentInput.value);
         if (isNaN(studentValue) || studentValue <= 0 || studentValue>totalStudents) {
-            alert("Veuillez saisir un entier positif valide pour le nombre d'étudiants ayant atteint l'objectif dans la ligne" + i + '.');
+            alert("Veuillez saisir un entier positif valide pour le nombre d'élèves ayant atteint l'objectif dans la ligne" + i + '.');
             studentInput.value = ''; // Clear the input
             return;
         }
