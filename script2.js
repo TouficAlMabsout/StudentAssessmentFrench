@@ -95,7 +95,7 @@ document.getElementById('testForm').addEventListener('submit', function (event) 
     // Validate and calculate Students that Acquired the Objective
     for (var i = 1; i < rows.length; i++) {
         var cells = rows[i].cells;
-        var objectiveInput = cells[0].querySelector('input');
+        var objectiveInput = cells[0].querySelector('textarea');
         var studentInput = cells[1].querySelector('input');
         var percentageOutput = cells[2].querySelector('output');
 
