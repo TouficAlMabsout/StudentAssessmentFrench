@@ -153,10 +153,10 @@ document.addEventListener('DOMContentLoaded', function () {
         window.print();
     });
 });
+
 document.addEventListener('DOMContentLoaded', function(){
     const goToSkills = document.getElementById('navigateButton');
     goToSkills.addEventListener('click',function(){
-        window.location="index2.html";
+        window.location="index.html";
  });
 });
-
